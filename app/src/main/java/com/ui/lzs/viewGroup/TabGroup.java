@@ -2,11 +2,16 @@ package com.ui.lzs.viewGroup;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+
+import com.ui.lzs.viewAdapter.TabGroupAdapter;
+import com.ui.lzs.viewEvent.ObserverBase;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +26,8 @@ public class TabGroup extends ViewGroup {
     private List<Integer> hList = new ArrayList<Integer>();
     private WindowManager wm;
     private Animation an;
+    private TabGroupAdapter<String[]> mTabGroupAdapter;
+
     @Override
     public LayoutParams generateLayoutParams(AttributeSet attrs) {
         return new MarginLayoutParams(getContext(), attrs);
@@ -105,7 +112,7 @@ public class TabGroup extends ViewGroup {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
 
-        int vl = 0, vr = 0, vb = 0, height = 0, vt = 0,m=0;
+        int vl = 0, vr = 0, vb = 0, height = 0, vt = 0, m = 0;
         for (int i = 0; i < vLists.size(); i++) {
             height = hList.get(i);
             vList = vLists.get(i);
@@ -114,17 +121,18 @@ public class TabGroup extends ViewGroup {
                 View v = vList.get(j);
                 MarginLayoutParams mp = (MarginLayoutParams) v.getLayoutParams();
                 vl = vr + mp.leftMargin;
-                if (i==0){
-                    vt=mp.topMargin;
+                if (i == 0) {
+                    vt = mp.topMargin;
                 }
                 vr = vl + v.getMeasuredWidth() + mp.rightMargin;
                 vb = vt + v.getMeasuredHeight() + mp.bottomMargin;
-                an = new AlphaAnimation(0.0f,1.0f);
+                //动画设置
+                an = new AlphaAnimation(0.0f, 1.0f);
                 an.setDuration(300 * m);
                 an.setFillBefore(false);
                 v.startAnimation(an);
                 v.layout(vl, vt, vr, vb);
-                if (j== vList.size()-1) {
+                if (j == vList.size() - 1) {
                     vl = 0;
                     vr = 0;
                     vt = height + mp.topMargin;
@@ -135,4 +143,24 @@ public class TabGroup extends ViewGroup {
         }
 
     }
+    //设置数据
+    public void setAadapter(TabGroupAdapter<String[]> mTabGroupAdapter){
+        this.mTabGroupAdapter=mTabGroupAdapter;
+        removeAllViews();
+        for (int i=0;i<mTabGroupAdapter.getCount();i++){
+            View v=mTabGroupAdapter.getview(this,i,mTabGroupAdapter.getItem(i));
+            v.setLayoutParams(v.getLayoutParams());
+            addView(v);
+        }
+    }
+
+    public class TabObserver extends ObserverBase{
+
+
+        public void  onchange(){
+
+        }
+
+    }
+
 }

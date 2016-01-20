@@ -3,7 +3,7 @@ package com.ui.lzs.test;
 import android.app.Activity;
 import android.os.Bundle;
 
-
+import com.ui.lzs.viewGroup.TabGroup;
 
 
 public class MainActivity extends Activity {
@@ -11,7 +11,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.tab);
 
 //        CircleImageViewText cim= new CircleImageViewText(this,Color.BLACK,90);
 //        MaterialProgressDrawable d=new MaterialProgressDrawable(this,cim);
@@ -65,4 +65,6 @@ public class MainActivity extends Activity {
 //        tv.measure(width,height);
 //        Log.v("cc", "w3," + tv.getMeasuredWidth() + ",h3," + tv.getMeasuredHeight());
 //    }
+
+
 }
