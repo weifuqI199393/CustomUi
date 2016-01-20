@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip">
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl"
+            android:layout_below="@+id/iv_progress"
+            android:layout_toLeftOf="@+id/rl"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/gray_txt" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_progress"
+            android:layout_toRightOf="@+id/iv_progress"
+            android:paddingRight="12dip">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:lines="2"
+                android:text="fsdafsdafsdafsdfsdafasdfasdfsdafrwerwerwerwerwerweew"
+                android:textColor="@color/green_main"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                android:layout_marginTop="8dip"
+                android:text="2015-09-21"
+                android:textColor="@color/green_main"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_below="@+id/tv_date"
+                android:layout_marginBottom="20dp"
+                android:background="@color/gray_txt" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

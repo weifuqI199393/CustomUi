@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    公用         -->
+    <attr name="size" format="dimension" />
+    <attr name="text" format="string" />
+    <attr name="color" format="color|reference"/>
+    <declare-styleable name="first" >
+        <attr name="size"  />
+        <attr name="text" />
+        <attr name="color"/>
+        <attr name="time" format="integer"/>
+        <attr name="isAuto" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="second" >
+        <attr name="size"  />
+        <attr name="text"  />
+        <attr name="color" />
+        <attr name="image" format="reference"/>
+        <attr name="imageStyle"
+            >
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="third" >
+        <attr name="size"  />
+        <attr name="text"  />
+        <attr name="color" />
+        <attr name="colorn" format="color|reference"/>
+        <attr name="colorz" format="color|reference"/>
+        <attr name="radiuswidth" format="dimension|reference" />
+        <attr name="progressing" format="integer|reference"  />
+        <attr name="progressmax" format="integer|reference"  />
+        </declare-styleable>
+
+
+
+
+
+</resources>

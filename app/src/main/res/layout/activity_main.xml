@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fuqi="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大大" />
+
+    <com.ui.lzs.view.TimeDown
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fuqi:color="@color/green_main"
+        fuqi:size="14sp"
+        fuqi:text="验证码"
+        fuqi:time="10000"
+        fuqi:isAuto="true"
+        android:padding="7dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:id="@+id/firstview"
+        android:background="@drawable/btn_style_1"
+        />
+    <com.ui.lzs.view.ImageVText
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fuqi:text="wozhishiyizhangtupian"
+        fuqi:size="18sp"
+        fuqi:color="@color/green_main"
+        fuqi:image="@mipmap/ic_man"
+        fuqi:imageStyle="center"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/firstview"
+        />
+    <com.ui.lzs.view.RoundProgress
+        android:id="@+id/rp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        fuqi:text="100"
+        fuqi:size="18sp"
+        fuqi:color="@color/green_main"
+        android:padding="15dp"
+        fuqi:radiuswidth="10dp"
+        fuqi:progressing="0"
+        fuqi:progressmax="100"
+        fuqi:colorn="@color/black_main_txt"
+        fuqi:colorz="@color/green_main"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        />
+    <com.ui.lzs.view.LLoadView
+        android:id="@+id/rp2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 底部和actionbar的颜色 -->
+    <color name="title_background_color">#0e1015</color>
+    <color name="transparent">#00000000</color>
+ 
+    <!-- 白色系 -->
+    <color name="white_main">#f0f2f5</color>
+    <color name="white_sec">#e0e1e6</color>
+    <color name="white_transparent">#40ffffff</color>
+    
+    <!-- 绿色系 -->
+    <color name="green_main">#00d6be</color>
+    <color name="green_main2">#9900d6be</color><!-- 60%透明 -->
+    <color name="green_dialog_bg">#29b3a1</color>
+    <color name="green_dialog_bg2">#9929b3a1</color><!-- 60%透明 -->
+    <color name="green_sec">#03d4c1</color>
+    <color name="green_bg">#0b8952</color>
+
+	<!-- 黑色系 -->
+	<color name="black_transparent">#30000000</color><!-- 30%透明 -->
+    <color name="black_transparent2">#B4000000</color><!-- 70%透明 -->
+    <color name="black_main_txt">#191d26</color>
+    <color name="black_dialog_txt">#2e2e30</color><!-- 中间dialog的黑色 -->
+    <color name="black_dialog_txt2">#1c2134</color><!-- 底部dialog的黑色 -->
+    <color name="black_dialog_bottom">#d6deea</color><!-- 中间dialog底部部分的颜色 -->
+    <color name="black_main_bg">#181c25</color>
+    <color name="black_sec_bg">#262a36</color>
+    
+    <!-- 灰色系 -->
+    <color name="gray_txt">#7e8b9d</color>
+    <color name="gray_txt2">#252a36</color>
+    <color name="gray_stoke">#4e596f</color><!-- 密码灰色描边 -->
+    
+    <!-- 红色系 -->
+    <color name="red_main">#ed0047</color>
+    <color name="red_sec">#f90b48</color>
+    <color name="red_bg">#d10627</color>
+    <color name="red_bg2">#99d10627</color><!-- 60%透明 -->
+    <color name="red_txt">#EE524D</color>
+    
+    <!-- 分割线 -->
+    <color name="split_color">#252a36</color>
+    <color name="split_color2">#353d54</color>
+    <color name="split_color3">#70252a36</color><!-- 70灰色背景-->
+    <color name="block_split_color">#2c3240</color>
+    
+    
+    <color name="yellow_txt">#ff9c00</color>
+    <color name="pinyin_bg">#11141b</color>
+    <color name="hint_color">#434d63</color>
+    <color name="gender_girl">#ff4b71</color><!-- 女背景 -->
+    <color name="gender_boy">#376de7</color><!-- 男背景 -->
+    <color name="level_dialog">#4b2089</color>
+    <color name="color_ykb_bkg">#3f3d92</color>
+    <color name="switch_gray">#5c6882</color><!-- 开关关的颜色 -->
+    <color name="gold_yeke">#6a6871</color>
+    
+    <drawable name="tv_bg_pressed">#b8e1f9</drawable>
+    <drawable name="tv_bg_normal">#ffffff</drawable>
+
+    
+ 	<color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="txt_black">#f5f5f5</color>
+    <color name="txt_blue">#291d51</color>
+    <color name="txt_blue2">#90291d51</color>
+    
+
+</resources>
